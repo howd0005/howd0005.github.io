@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>HTML Forms</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This is Assignment 3 fir LIB2024, an HTML form">
+</head>
+<body>
+	<header id="header">
+	Tell Us About Yourself
+	</header>
+	<div id="wrapper" class="wrapper">
+		<section id="html-forms" class="main-section">
+			<form action="apage.php" method="get">
+				<div id="fn-container" class="form-elm">
+					<label for="firstname">First Name</label>
+					<input type="text" name="firstname" id="firstname" placeholder="First Name goes here">
+				</div>
+				<div id="ln-container" class="form-elm">
+					<label for="lastname">Last Name</label>
+					<input type="text" name="lastname" id="lastname" placeholder="Last Name goes here">
+				</div>
+				<div id="email-container" class="form-elm">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" value="example@gmail.com" required>
+				</div>
+				<div id="pass-container" class="form-elm">
+					<label for="pass">Password</label>
+					<input type="password" name="pass" id="pass" placeholder="xxxxxxxx" required>
+				</div>
+				<div id="sum-container" class="form-elm">
+					<label for="summary">Introductory Text</label>
+					<textarea name="summary" id="summary" placeholder="Enter Introductory Text here">
+						Introduce Yourself!
+					</textarea>
+				</div>
+				<div id="date-of-birth-container" class="form-elm">
+					<label for="date-of-birth">Date of Birth</label>
+					<input type="date" name="date-of-birth" id="date-of-birth" required>
+				</div>
+				<div id="mobile-number-container" class="form-elm">
+					<label for="mobile-number">Mobile Number</label>
+					<input type="number" name="mobile-number" id="mobile-number" placeholder="1-555-555-1234" required>
+				</div>
+				<h4>Gender</h4>
+				<div id="gender-container" class="form-elm">
+					<label for="female">Female</label>
+					<input type="radio" name="gender-form" id="female" value="female">
+					<label for="male">Male</label>
+					<input type="radio" name="gender-form" id="male" value="male">
+					<label for="non-binary">Non-Binary</label>
+					<input type="radio" name="gender-form" id="non-binary" value="non-binary">
+					<label for="non-disclosure">Prefer not to say</label>
+					<input type="radio" name="gender-form" id="non-disclosure" value="Prefer not to say">
+				</div><br>
+				<div id="address-container" class="form-elm">
+					<label for="address">Address</label>
+					<input type="text" name="address" id="address" placeholder="42 Wallaby Way" required>
+				</div>
+				<div id="city-container" class="form-elm">
+					<label for="city">City</label>
+					<input type="text" name="city" id="city" placeholder="Sidney" required>
+				</div>
+				<div id="province-container" class="form-elm">
+					<label for="province">Province</label>
+					<select name="province" id="province">
+						<optgroup label="Provinces">
+							<option value="British_Columbia" selected>British Columbia</option>
+							<option value="Alberta">Alberta</option>
+							<option value="Saskatchewan">Saskatchewan</option>
+							<option value="Manitoba">Manitoba</option>
+							<option value="Ontario">Ontario</option>
+							<option value="Quebec">Quebec</option>
+							<option value="New_Brunswick">New Brunswick</option>
+							<option value="Nova_Scotia">Nova Scotia</option>
+							<option value="Prince_Edward_Island">Prince Edward Island</option>
+							<option value="Newfoundland_and_Labrador">Newfoundland and Labrador</option>
+						</optgroup>
+						<optgroup label="Territories">
+							<option value="Yukon">Yukon</option>
+							<option value="North_West_Territories">North West Territories</option>
+							<option value="Nunavut">Nunavut</option>
+						</optgroup>	
+					</select>
+				</div>
+				<div id="country-container" class="form-elm">
+					<label for="country">Country</label>
+					<select id="country" name="country">
+						<optgroup label="North-America">
+							<option value="Canada">Canada</option>
+							<option value="United_States_of_America">United States of America</option>
+							<option value="Mexico">Mexico</option>
+						</optgroup>
+						<optgroup label="South-America">
+							<option value="Brazil">Brazil</option>
+							<option value="Venezuela">Venezuela</option>
+							<option value="Peru">Peru</option>
+							<option value="Ecuador">Ecuador</option>
+						</optgroup>
+						<optgroup label="Europe">
+							<option value="United_Kingdom">United Kingdom</option>
+							<option value="France">France</option>
+							<option value="Germany">Germany</option>
+							<option value="Italy">Italy</option>
+						</optgroup>
+						<optgroup label="Oceania">
+							<option value="Australia">Australia</option>
+							<option value="New_Zealand">New Zealand</option>
+						</optgroup>
+						<optgroup label="Asia">
+							<option value="India">India</option>
+							<option value="China">China</option>
+							<option value="Japan">Japan</option>
+							<option value="Nepal">Nepal</option>
+							<option value="Russia">Russia</option>
+						</optgroup>
+						<optgroup label="Africa">
+							<option value="Egypt">Egypt</option>
+							<option value="South_Africa">South Africa</option>
+							<option value="Libya">Libya</option>
+							<option value="Rwanda">Rwanda</option>
+							<option value="Morocco">Morocco</option>
+							<option value="Tanzania">Tanzania</option>
+						</optgroup>
+					</select>	
+				</div>
+				<div id="postal-code-container" class="form-elm">
+					<label for="postal-code">Postal Code</label>
+					<input type="text" name="postal-code" id="postal-code" placeholder="X1X 2Y2">
+				</div>
+				<div id="hobbies-container" class="form-elm">
+					<h4>Hobbies/Interests</h4>
+					<label for="knitting">Knitting</label>
+					<input type="checkbox" name="hobbies/interests" id="knitting" value="knitting"> <br>
+					<label for="crochet">Crochet</label>
+					<input type="checkbox" name="hobbies/interests" id="crochet" value="crochet"> <br>
+					<label for="cross_stitch">Cross-stitch</label>
+					<input type="checkbox" name="hobbies/interests" id="cross_stitch" value="cross_stitch"> <br>
+					<label for="embroidery">Embroidery</label>
+					<input type="checkbox" name="hobbies/interests" id="embroidery" value="embroidery"> <br>
+					<label for="reading">Reading</label>
+					<input type="checkbox" name="hobbies/interests" id="reading" value="reading"> <br>
+					<label for="television">Watching TV</label>
+					<input type="checkbox" name="hobbies/interests" id="television" value="television"> <br>
+					<label for="quidditch">Quidditch</label>
+					<input type="checkbox" name="hobbies/interests" id="quidditch" value="quidditch" checked> <br>
+				</div> <br>
+				<div id="website-container" class="form-elm">
+					<label for="website">Website</label>
+					<input type="url" id="website" name="website" placeholder="https://www.spacejam.com/">
+				</div> <br>
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
+		
+
+
