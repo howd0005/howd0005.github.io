@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>Final Assignment LIB 2024</title>
+	<meta name="description" content="This is the Final Assignment for LIB2024, an html site with css and javascript">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<!-- Header starts -->
+	<header class="site-header" id="site-header">
+		<div class="logo">Logo</div>
+		<!-- Main navigation starts -->
+		<nav class="main-nav-container desktop-nav">
+			<ul class="main-nav clearfix">
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="schedule.html">Schedule</a>
+				</li>
+				<li>
+					<a href="portfolio.html">Portfolio</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Main navigation ends -->
+		<div class="ham">Hamburger</div>
+		<!-- Mobile navigation starts -->
+		<div class="mobile-nav-container">
+			<nav class="main-nav-container mobile-nav">
+			<ul class="mobile-nav">
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="schedule.html">Schedule</a>
+				</li>
+				<li>
+					<a href="portfolio.html">Portfolio</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+			</nav>
+		</div>
+		<!-- Mobile navigation ends -->
+	</header>
+	<!-- Header ends -->
+	<!-- Main starts -->
+	<main class="main clearfix" id="main">
+		<!-- Site content starts -->
+		<article class="col-main site-content">
+			<!-- Main content starts -->
+			<section class="main-content">
+				<h2>About</h2>
+				<p>He knew what he was supposed to do. That had been apparent from the beginning. That was what made the choice so difficult. What he was supposed to do and what he would do were not the same. This would have been fine if he were willing to face the inevitable consequences, but he wasn't.
+				He looked at the sand. Picking up a handful, he wondered how many grains were in his hand. Hundreds of thousands? "Not enough," the said under his breath. I need more. </p>
+				<p>One dollar and eighty-seven cents. That was all. And sixty cents of it was in pennies. Pennies saved one and two at a time by bulldozing the grocer and the vegetable man and the butcher until one’s cheeks burned with the silent imputation of parsimony that such close dealing implied. One dollar and eighty-seven cents. And the next day would be Christmas...</p>
+			</section>
+			<!-- Main content ends -->
+			<!-- Secondary content starts -->
+			<section class="main-content secondary-content">
+				<h2>Schedule</h2>
+				<div class="table" id="schedule-table">
+					<table>
+						<thead>
+							<tr align="center">
+								<th>Time</th>
+								<th>Monday</th>
+								<th>Tuesday</th>
+								<th>Wednesday</th>
+								<th>Thursday</th>
+								<th>Friday</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr align="center">
+								<td>09:00-11:00</td>
+								<td>Communications I</td>
+								<td>Client Services</td>
+								<td>Special Collections</td>
+								<td>Directed Research Seminar</td>
+								<td>Client Services</td>	
+							</tr>
+							<tr align="center">
+								<td>11:00-12:30</td>
+								<td>Reference</td>
+								<td>Internet App</td>
+								<td>Library Software</td>
+								<td>French</td>
+								<td>Reference</td>
+							</tr>
+							<tr align="center">
+								<td>14:00-15:00</td>
+								<td>Acquisitions</td>
+								<td>General Elective</td>
+								<td>Marketing</td>
+								<td>Emerging Library Tech</td>
+								<td>Library Software</td>
+							</tr>
+							<tr align="center">
+								<td>15:00-17:30</td>
+								<td>French</td>
+								<td>French</td>
+								<td>Acquisitions</td>
+								<td>Subject Analysis</td>
+								<td>Internet App</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+			<!-- Secondary content ends -->
+			<!-- Tertiary content starts -->
+			<section class="main-content edit-profile">
+				<form action="apage.php" method="get">
+					<div>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name">
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email">
+					</div>
+					<div>
+						<label for="address">Address</label>
+						<input type="text" name="address" id="address">
+					</div>
+					<div>
+						<label for="city">City</label>
+						<input type="type" name="city" id="city">
+					</div>
+					<div>
+						<label for="province">Province</label>
+						<select name="province" id="province">
+							<optgroup label="Provinces">
+								<option value="BC">British Columbia</option>
+								<option value="AB">Alberta</option>
+								<option value="SK">Saskatchewan</option>
+								<option value="MB">Manitoba</option>
+								<option value="ON" selected>Ontario</option>
+								<option value="QC">Quebec</option>
+								<option value="NB">New Brunswick</option>
+								<option value="NS">Nova Scotia</option>
+								<option value="PE">Prince Edward Island</option>
+								<option value="NL">Newfoundland and Labrador</option>
+							</optgroup>
+							<optgroup label="Territories">
+								<option value="YT">Yukon</option>
+								<option value="NT">North West Territories</option>
+								<option value="NU">Nunavut</option>
+							</optgroup>	
+						</select>
+					</div>
+					<div>
+						<label for="postal-code">Postal Code</label>
+						<input type="text" name="postal-code" id="postal-code">
+					</div>
+					<br>
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+			<!-- Tertiary content ends -->
+			<!-- Quartiary content starts -->
+			<section class="main-content quartiary-content">
+				<div>
+					<img src="img/profile.png">
+					<h3>John Doe</h3>
+					<p>Johndoe@algonquincollege.com</p>
+					<p>1385 Woodroffe Ave, Nepean</p>
+					<p>ON, K2G 1V8</p>
+				</div>
+			</section>
+			<!-- Quartiary content ends -->
+		</article>
+	</main>
+	<!-- Main ends -->
+	<!-- Sidebar content starts -->
+	<aside class="col-main site-sidebar">
+		<img src="img/nebula2.png" alt="nebula image">
+	</aside>
+	<!-- Sidebar content ends -->
+	<!-- Footer starts -->
+	<footer class="footer" id="footer">
+		<div class="footer-containter">
+			<section class="col-footer quick-links">
+				<h4>Quick Links</h4>
+				<nav>
+					<ul>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="schedule.html">Schedule</a>
+						</li>
+						<li>
+							<a href="portfolio.hmtl">Portfolio</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+
+			<section class="col-footer follow-us">
+				<h4>Follow Us</h4>
+				<nav>
+					<ul>
+						<li>
+							<a href="https://www.facebook.com"><img src="img/facebook.png" class="logo" alt="facebook logo"></a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com"><img src="img/youtube.png" class="logo" alt="youtube logo"></a>
+						</li>
+						<li>
+							<a href="https://www.twitter.com"><img src="img/twitter.png" class="logo" alt="twitter logo"></a>
+						</li>
+					</ul>
+				</nav>
+			</section>
+
+			<section class="col-footer address">
+				<h4>Address</h4>
+				<address>
+					<p>1385 Woodroffe Ave.</p>
+					<p>Nepean, ON K2G 1V8</p>
+					<p>Canada</p>
+				</address>
+			</section>
+		</div>
+	</footer>
+		<!-- Footer ends -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/.js"></script>
+</body>
+</html>
+
+
+
+
